@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{root}}css/app.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{subject}</title>
+    <!-- <style> -->
+  </head>
+  <body>
+    <span class="preheader">{{description}}</span>
+    <table class="body">
+      <tr>
+        <td class="center" align="center" valign="top">
+          <center>
+            <container>
+              <row>
+                <columns>
+                	<a target="_blank" href="https://www.digitalcanvas.com">
+                  		<img src="https://digitalcanvas-info.s3.amazonaws.com/email-templates/images/digital-canvas-logo-color.gif" alt="Digital Canvas">
+                  	</a>
+                </columns>
+              </row>
+            </container>
+            <div data-section-wrapper>
+            {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created. --}}
+            {{> body}}
+            </div>
+            <container>
+            	<row class="header">
+				    <columns large="6">
+				    	<p class="text-left small-text-center">
+					      <a target="_blank" href="https://twitter.com/digitalcanvas"><img class="inline" src="https://digitalcanvas-info.s3.amazonaws.com/email-templates/images/social/twitter.png" alt="Twitter"></a>
+					      <a target="_blank" href="https://facebook.com/digitalcanvas"><img class="inline" src="https://digitalcanvas-info.s3.amazonaws.com/email-templates/images/social/facebook.png" alt="Facebook"></a>
+					      <a target="_blank" href="https://www.linkedin.com/company/digital-canvas-internet-marketing"><img class="inline" src="https://digitalcanvas-info.s3.amazonaws.com/email-templates/images/social/linkedin.png" alt="LinkedIn"></a>
+					      <a target="_blank" href="https://www.youtube.com/channel/UCcyBm1SL5qM1QSLEatVG71Q"><img class="inline" src="https://digitalcanvas-info.s3.amazonaws.com/email-templates/images/social/youtube.png" alt="YouTube"></a>
+				    	</p>
+				    </columns>
+				    <columns large="6">
+				      <p class="text-right small-text-center">
+				      	<a target="_blank" href="https://www.digitalcanvas.com">
+				      		<img class="inline" src="https://digitalcanvas-info.s3.amazonaws.com/email-templates/images/digital-canvas-logo-color.gif" alt="Digital Canvas">
+				      	</a>
+				      </p>
+				    </columns>
+				  </row>
+				<row class="collapse">
+				    <columns>
+				      <spacer size="5"></spacer>
+				      <p class="text-center">
+				        ©2017 Digital Canvas<br>
+				        3731 Sunset Ln, Ste 210, Antioch, CA 94509
+				      </p>
+				      <p class="text-center"><a target="_blank" href="#">unsubscribe</a></p>
+				    </columns>
+				</row>
+            </container>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <!-- prevent Gmail on iOS font size manipulation -->
+   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+  </body>
+</html>
+
