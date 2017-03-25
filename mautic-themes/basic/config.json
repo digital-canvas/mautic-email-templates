@@ -1,0 +1,8 @@
+{
+  "name": "Basic",
+  "author": "Basic email template",
+  "authorUrl": "https://github.com/digital-canvas/mautic-email-templates",
+  "features": [
+    "email"
+  ]
+}
